@@ -1,0 +1,26 @@
+<!-- string interploation -->
+<div>
+  <p>Data binding sting interploation</p>
+  <p>{{ dataBinding }}</p>
+</div>
+
+<div>
+  <p>
+    Propertity binding Property binding is a one-way data binding from the
+    component to the view. It sets the property of an HTML element to a value
+    from the component. Syntax: [property]="expression"
+  </p>
+  <img [src]="imageLink" />
+</div>
+
+<h1>Child component</h1>
+<app-child #child (chilData)="childDataRecived($event)"></app-child>
+
+<div>
+  <h1 [appTesting]="childDataRecivedData">
+    Recived Data form Parent using Output: {{ childDataRecivedData }}
+  </h1>
+</div>
+
+
+

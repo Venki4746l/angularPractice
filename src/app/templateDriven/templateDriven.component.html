@@ -1,0 +1,31 @@
+<div>
+  <h4>templateDriven</h4>
+  <h1>This using the ngModel single way binding</h1>
+  <form (ngSubmit)="onSubmit(mydetails)" #mydetails="ngForm">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp"
+        name="email"
+        [(ngModel)]="user.email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="exampleInputPassword1"
+        name="password"
+        [(ngModel)]="user.password"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+  
