@@ -15,9 +15,10 @@ import { HttpComponent } from './Http/Http.component';
 import { TextConverntionPipe } from './core/pipes/text-converntion.pipe';
 import { TestingDirective } from './core/Directives/testing.directive';
 import { SignalComponent } from './Signal/Signal.component';
+import { LifecycleComponent } from './Lifecycle/Lifecycle.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     DatabindingComponent,
     HomeComponent,
@@ -28,7 +29,8 @@ import { SignalComponent } from './Signal/Signal.component';
     TextConverntionPipe,
     TestingDirective,
     SignalComponent,
-  ],
+      LifecycleComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
